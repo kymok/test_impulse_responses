@@ -1,0 +1,14 @@
+version: '3'
+services:
+    test-ir-gen:
+        container_name: test-ir-gen
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+                - ./work:/work
+        ports:
+            - "9000"
+        command: sh -c "jupyter lab --ip=0.0.0.0 --port 9000 --allow-root --notebook-dir=/work"
+        stdin_open: true
+        restart: always

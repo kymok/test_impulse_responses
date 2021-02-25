@@ -1,0 +1,14 @@
+# other
+numpy
+scipy
+
+# visualisation
+altair
+altair-saver
+selenium
+ipywidgets
+matplotlib
+colour-science
+
+# data
+pandas
